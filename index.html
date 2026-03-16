@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nepal Nature Encyclopedia</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#eef7ee;
+color:#2f3e2f;
+transition:0.3s;
+}
+
+.dark{
+background:#121212;
+color:#ddd;
+}
+
+header{
+background:linear-gradient(90deg,#2e7d32,#66bb6a);
+color:white;
+padding:20px;
+text-align:center;
+font-size:30px;
+}
+
+button{
+padding:8px 14px;
+margin-top:10px;
+border:none;
+background:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+background-size:cover;
+background-position:center;
+height:280px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:40px;
+text-shadow:2px 2px 8px black;
+}
+
+.container{
+display:flex;
+}
+
+nav{
+width:220px;
+background:#dcedc8;
+padding:20px;
+}
+
+nav a{
+display:block;
+margin:8px 0;
+text-decoration:none;
+color:#1b5e20;
+font-weight:bold;
+}
+
+main{
+flex:1;
+padding:30px;
+background:white;
+}
+
+.infobox{
+float:right;
+width:260px;
+background:#f5f5f5;
+padding:15px;
+border:1px solid #ccc;
+margin-left:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+}
+
+footer{
+background:#2e7d32;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+
+<script>
+
+function toggleDark(){
+document.body.classList.toggle("dark");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+Nepal Nature Encyclopedia
+<br>
+<button onclick="toggleDark()">Toggle Dark Mode</button>
+</header>
+
+<div class="hero">
+Nepal – Land of Natural Beauty
+</div>
+
+<div class="container">
+
+<nav>
+
+<b>Navigation</b>
+
+<a href="#overview">Overview</a>
+<a href="#geography">Geography</a>
+<a href="#nature">Nature</a>
+<a href="#culture">Culture</a>
+<a href="#tourism">Tourism</a>
+<a href="#gallery">Gallery</a>
+<a href="#map">Map</a>
+
+</nav>
+
+<main>
+
+<div class="infobox">
+
+<h3>Nepal</h3>
+
+<p><b>Capital:</b> Kathmandu</p>
+<p><b>Population:</b> 30+ million</p>
+<p><b>Official language:</b> Nepali</p>
+<p><b>Highest mountain:</b> Mount Everest</p>
+<p><b>Region:</b> South Asia</p>
+
+</div>
+
+<section id="overview">
+
+<h2>Overview</h2>
+
+<p>
+Nepal is a mountainous country in South Asia located between India and China.
+It is famous for its stunning Himalayan landscapes and cultural heritage.
+</p>
+
+<p>
+The country contains eight of the ten highest mountains in the world,
+including Mount Everest.
+</p>
+
+</section>
+
+<section id="geography">
+
+<h2>Geography</h2>
+
+<p>
+Nepal’s geography ranges from the Terai plains in the south
+to the Himalayan mountains in the north. Rivers, forests,
+and valleys form diverse ecosystems.
+</p>
+
+</section>
+
+<section id="nature">
+
+<h2>Natural Beauty</h2>
+
+<p>
+Nepal is one of the most beautiful countries in the world.
+Snow-covered mountains, green forests, lakes, and rivers
+create breathtaking scenery.
+</p>
+
+</section>
+
+<section id="culture">
+
+<h2>Culture</h2>
+
+<p>
+Nepal’s culture is influenced by Hindu and Buddhist traditions.
+Festivals like Dashain and Tihar are celebrated across the country.
+</p>
+
+</section>
+
+<section id="tourism">
+
+<h2>Tourism</h2>
+
+<p>
+Tourism is one of Nepal’s most important industries.
+Trekking, mountaineering, and cultural tourism attract
+millions of visitors every year.
+</p>
+
+</section>
+
+<section id="gallery">
+
+<h2>Nature Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<img src="https://images.unsplash.com/photo-1544739313-3b5c1e6b6e8c">
+
+<img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d">
+
+</div>
+
+</section>
+
+<section id="map">
+
+<h2>Map of Nepal</h2>
+
+<iframe 
+width="100%" 
+height="350" 
+src="https://maps.google.com/maps?q=Nepal&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+</main>
+
+</div>
+
+<footer>
+© Saurav Nature Encyclopedia
+</footer>
+
+</body>
+</html>

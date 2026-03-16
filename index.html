@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nepal Encyclopedia</title>
+
+<style>
+body{
+font-family: Arial;
+background:#f6f6f6;
+margin:0;
+}
+
+header{
+background:#202122;
+color:white;
+padding:15px;
+font-size:24px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+background:white;
+padding:25px;
+}
+
+h1,h2{
+border-bottom:1px solid #ccc;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>Nepal Information Encyclopedia</header>
+
+<div class="container">
+
+<h1>Nepal</h1>
+
+<div id="content"></div>
+
+</div>
+
+<script>
+
+let text = `
+Nepal is a landlocked country in South Asia located between China and India.
+It is known for the Himalayan mountains, cultural heritage, ancient temples,
+and diverse ethnic communities. Kathmandu is the capital city of Nepal and
+serves as the political, cultural, and economic center of the country.
+Nepal contains Mount Everest, the highest mountain in the world, and attracts
+millions of tourists each year for trekking, mountaineering, and spiritual travel.
+`;
+
+let content = "";
+
+for(let i=0;i<1200;i++){
+content += "<p>" + text + "</p>";
+}
+
+document.getElementById("content").innerHTML = content;
+
+</script>
+
+</body>
+</html>
